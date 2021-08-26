@@ -1,0 +1,7 @@
+@import 'bemify';
+@import '../../../styles/global.scss';
+
+@include block(my-button) {
+  background: $primary-color;
+  border-radius: $pd-s;
+}

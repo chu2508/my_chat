@@ -1,0 +1,27 @@
+@import "bemify";
+@import "../../../styles/global.scss";
+
+@include block(my-input) {
+  display: flex;
+  align-items: center;
+  border: 2px solid $text-color;
+  border-radius: 8px;
+  font-size: $ft-m;
+  &:focus-within {
+    border-color: $primary-color;
+  }
+  @include element (input) {
+    flex: 1 1;
+    border: none;
+    padding: 0 8px;
+    outline: none;
+    color: $text-color;
+    background: none;
+  }
+  @include element(prefix) {
+    flex-shrink: 0;
+  }
+  @include element(prefix) {
+    flex-shrink: 0;
+  }
+}
