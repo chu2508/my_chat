@@ -11,7 +11,7 @@ const SignIn = () => {
   const submit = () => {};
   return (
     <div>
-      <img src={logo} alt="logo" />
+      <img style={{width: 60, height: 60, margin: '0 auto', display: 'block'}} src={logo} alt="logo" />
       <h1>{slogan}</h1>
       <Input value={username} onChange={(value) => setUsername(value)} placeholder="please enter your username" />
       <Input value={password} onChange={(value) => setPassword(value)} placeholder="Password" />
